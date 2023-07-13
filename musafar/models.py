@@ -25,3 +25,11 @@ class Song(models.Model):
 
     def __str__(self):
         return self.title
+class Profile(models.Model):
+    dp = models.ImageField()
+
+    def __str__(self):
+        return self.dp
+    
+class desc(models.Model):
+    desc = models.TextField(max_length=1000)
